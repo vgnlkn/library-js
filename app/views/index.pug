@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="utf-8")
+    link(rel='stylesheet' href='/public/css/index.css')
+    link(rel='stylesheet' href="https://www.w3schools.com/w3css/4/w3.css")
+    title #{page_title}
+    body
+      h1 #{page_title}
+      div.menu
+        button.w3-button.w3-green
+          a(href='/addBook')
+              +
+      each book in books
+        div.w3-card-3.w3-panel.w3-grey
+            div.w3-third.w3-center= book.title
+            div.w3-third.w3-center= book.author
+            div.w3-third.w3-center= book.publish_year
+
+
+      i.fa.fa-plus

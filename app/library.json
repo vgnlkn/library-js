@@ -1,0 +1,68 @@
+{
+    "books" : [
+        {
+            "id" : 1,
+            "author" : "D. Knuth",
+            "title" : "Art of Computer Programming",
+            "publish_year" : 1990,
+            "current_owner" : "",
+            "return_till" : ""
+        },
+        {
+            "id" : 2,
+            "author" : "D. Knuth",
+            "title" : "Art of Computer Programming",
+            "publish_year" : 1990,
+            "current_owner" : "",
+            "return_till" : ""
+        },
+        {
+            "id" : 3,
+            "author" : "D. Knuth",
+            "title" : "Art of Computer Programming",
+            "publish_year" : 1990,
+            "current_owner" : "",
+            "return_till" : ""
+        },
+        {
+            "id" : 4,
+            "author" : "D. Knuth",
+            "title" : "Art of Computer Programming",
+            "publish_year" : 1990,
+            "current_owner" : "",
+            "return_till" : ""
+        },
+        {
+            "id" : 5,
+            "author" : "D. Knuth",
+            "title" : "Art of Computer Programming",
+            "publish_year" : 1990,
+            "current_owner" : "",
+            "return_till" : ""
+        },
+        {
+            "id" : 6,
+            "author" : "D. Knuth",
+            "title" : "Art of Computer Programming",
+            "publish_year" : 1990,
+            "current_owner" : "",
+            "return_till" : ""
+        },
+        {
+            "id" : 7,
+            "author" : "D. Knuth",
+            "title" : "Art of Computer Programming",
+            "publish_year" : 1990,
+            "current_owner" : "",
+            "return_till" : ""
+        },
+        {
+            "id" : 8,
+            "author" : "D. Knuth",
+            "title" : "Art of Computer Programming",
+            "publish_year" : 1990,
+            "current_owner" : "",
+            "return_till" : ""
+        }
+    ]
+}
