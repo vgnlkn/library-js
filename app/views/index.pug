@@ -1,21 +1,43 @@
 doctype html
 html(lang='en')
-  head
-    meta(charset="utf-8")
-    link(rel='stylesheet' href='/public/css/index.css')
-    link(rel='stylesheet' href="https://www.w3schools.com/w3css/4/w3.css")
-    title #{page_title}
-    body
-      h1 #{page_title}
-      div.menu
-        button.w3-button.w3-green
-          a(href='/addBook')
-              +
-      each book in books
-        div.w3-card-3.w3-panel.w3-grey
-            div.w3-third.w3-center= book.title
-            div.w3-third.w3-center= book.author
-            div.w3-third.w3-center= book.publish_year
+	head
+		meta(charset="utf-8")
+		link(rel='stylesheet' href='/public/css/index.css')
+		link(rel='stylesheet' href="https://www.w3schools.com/w3css/4/w3.css")
+		script(src='/public/js/index.js')
+		title #{page_title}
+	body
+		div.header
+			div.menu
+				a.home(href='/')= page_title
+			div.menu
+				select#filter-option(name="filter")
+					option(value="all") All
+					option(value="in_library") In library
+					option(value="return_till") Return date
+				img.confirm-icon(src='/public/img/confirm-icon.svg', onclick='filter();')
+			div.menu
+				img.add-icon(src='/public/img/add-icon.png', onclick='addBookRedirect();')
 
+		div.books#books
+			each book in books
+				div.card
+					div
+						h2
+							a.book-page-link(href='/book/' + book.id)= book.title
+					div
+						p.info Author: 
+							i= book.author
+					div
+						p.info Published in #{book.publish_year}
+					
+					div
+						img.delete-icon(src='/public/img/delete-icon.svg' onclick="deleteBookOpenDialog("+ book.id +");")
+		
+		span#id
 
-      i.fa.fa-plus
+		div#delete-book.w3-modal
+			div.modal-content.w3-modal-content
+				h2 Sure?
+				button.button.modal-button-confirm(onclick="deleteBookConfirmed();") Confirm 
+				button.button(onclick="deleteBookCloseDialog();") Cancel

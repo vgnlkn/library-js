@@ -1,3 +1,96 @@
-i {
-    font-size:24px;
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8b75a1; 
+    border-bottom: .07em solid;
+}
+
+.header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+.menu{
+    display: inline-block;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.home{
+    font-size: 24px;
+}
+
+.books{
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.card, .modal-content{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 3px solid #dcd5f2;
+    border-radius: 10px;
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.book-page-link{
+    text-decoration: none;
+}
+
+.book-page-link:hover {
+    color: #8b75a1; 
+    border-bottom: .07em solid;
+}
+
+.book-page-link:active {
+    color: #8b75a1; 
+    border-bottom: 1px dashed;
+}
+
+.info{
+    font-size: 18px;
+}
+
+.delete-icon, .add-icon{
+    max-width: 50px; 
+}
+
+.confirm-icon{
+    padding-left: 10px;
+    max-width: 60px; 
+}
+
+.button{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: none; 
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.button:hover{
+    background: #8b75a1;  
+}
+
+.modal-button-confirm, .select_button{
+   background: #dcd5f2;
+}
+
+#filter-option{
+    font-size: 22px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#id{
+    display: none;
 }

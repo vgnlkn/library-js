@@ -1,9 +1,17 @@
 {
     "books" : [
         {
+            "id" : 0,
+            "author" : "DDD",
+            "title" : "0 Programming",
+            "publish_year" : 1990,
+            "current_owner" : "",
+            "return_till" : ""
+        },
+        {
             "id" : 1,
             "author" : "D. Knuth",
-            "title" : "Art of Computer Programming",
+            "title" : "1 Art of Computer Programming",
             "publish_year" : 1990,
             "current_owner" : "",
             "return_till" : ""
@@ -11,7 +19,7 @@
         {
             "id" : 2,
             "author" : "D. Knuth",
-            "title" : "Art of Computer Programming",
+            "title" : "2 Art of Computer Programming",
             "publish_year" : 1990,
             "current_owner" : "",
             "return_till" : ""
@@ -19,7 +27,7 @@
         {
             "id" : 3,
             "author" : "D. Knuth",
-            "title" : "Art of Computer Programming",
+            "title" : "3 Art of Computer Programming",
             "publish_year" : 1990,
             "current_owner" : "",
             "return_till" : ""
@@ -27,7 +35,7 @@
         {
             "id" : 4,
             "author" : "D. Knuth",
-            "title" : "Art of Computer Programming",
+            "title" : "4 Art of Computer Programming",
             "publish_year" : 1990,
             "current_owner" : "",
             "return_till" : ""
@@ -35,7 +43,7 @@
         {
             "id" : 5,
             "author" : "D. Knuth",
-            "title" : "Art of Computer Programming",
+            "title" : "5 Art of Computer Programming",
             "publish_year" : 1990,
             "current_owner" : "",
             "return_till" : ""
@@ -43,7 +51,7 @@
         {
             "id" : 6,
             "author" : "D. Knuth",
-            "title" : "Art of Computer Programming",
+            "title" : "6 Art of Computer Programming",
             "publish_year" : 1990,
             "current_owner" : "",
             "return_till" : ""
@@ -51,7 +59,7 @@
         {
             "id" : 7,
             "author" : "D. Knuth",
-            "title" : "Art of Computer Programming",
+            "title" : "7 Art of Computer Programming",
             "publish_year" : 1990,
             "current_owner" : "",
             "return_till" : ""
@@ -59,7 +67,7 @@
         {
             "id" : 8,
             "author" : "D. Knuth",
-            "title" : "Art of Computer Programming",
+            "title" : "8 Art of Computer Programming",
             "publish_year" : 1990,
             "current_owner" : "",
             "return_till" : ""

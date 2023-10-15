@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset="utf-8")
+		link(rel='stylesheet' href='/public/css/book.css')
+		link(rel='stylesheet' href="https://www.w3schools.com/w3css/4/w3.css")
+		script(src='/public/js/book.js')
+		title #{page_title}
+	body
+		div.header
+			div.menu
+				a.home(href='/')= page_title
+		div.content 
+			p Title:
+				input#title(type="text", name="title", value=book.title)
+			p Author:
+				input#author(type="text", name="author", value=book.author)
+			p Publish Year:
+				input#publish_year(type="text", name="date", value=book.publish_year)
+			p#current_owner_paragraph Current owner:
+				span#current_owner #{book.current_owner}
+			p#return_till_paragraph Return till:
+				span#return_till #{book.return_till}
+			div.buttons
+				button.button.submit(onclick="submitButtonClick();") Submit
+				button.button#issue.submit(onclick="openIssueDialog();") Issue
+				button.button#return.submit(onclick="returnBookButtonClick();") Return
+
+
+		div#issue_book.w3-modal
+			div.w3-modal-content.content.modal
+				h2 Issue book
+				form(id="issue_book")
+					input(type="hidden", id="bookId", name="id", value=book.id)
+					p Name:
+						input#issue_name(type="text")
+					p Return date:
+						input#issue_return_till(type="text")
+					button.button#submit_issue(onclick="submitIssueButtonClick();") Submit
+					button.button#cancel_issue(onclick="closeIssueDialog();") Cancel

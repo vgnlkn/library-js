@@ -1,0 +1,43 @@
+//- doctype html
+//- html(lang='en')
+//- head
+//- meta(charset="utf-8")
+//- link(rel='stylesheet' href='/public/css/add-book.css')
+//- link(rel='stylesheet' href="https://www.w3schools.com/w3css/4/w3.css")
+//- script(src='/public/js/book.js')
+//- title #{page_title}
+//- body
+//- div.header
+//- div.menu
+//- 	a.home(href='/')= page_title
+//- div
+//- form(action="/create-book", method="POST")
+//- p Title:
+//- input(type="text", name="title")
+//- p Author:
+//- input(type="text", name="author")
+//- p Publish year:
+//- input(type="text", name="publish_year")
+//- button(type="submit") Add
+doctype html
+html(lang='en')
+	head
+		meta(charset="utf-8")
+		link(rel='stylesheet' href='/public/css/book.css')
+		link(rel='stylesheet' href="https://www.w3schools.com/w3css/4/w3.css")
+		script(src='/public/js/book.js')
+		title #{page_title}
+	body
+		div.header
+			div.menu
+				a.home(href='/')= page_title
+		div.content
+			form(action="/create-book", method="POST")
+				p Title:
+					input(type="text", name="title")
+				p Author:
+					input(type="text", name="author")
+				p Publish year:
+					input(type="text", name="publish_year")
+				button.button(type="submit") Add
+			
